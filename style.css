@@ -1,0 +1,95 @@
+@font-face {
+    font-family: "NetflixSansRegular";
+    src: url(fonts/NetflixSansRegular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "NetflixSansBlack";
+    src: url(fonts/NetflixSansBlack.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "NetflixSansBold";
+    src: url(fonts/NetflixSansBold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "NetflixSansIcon";
+    src: url(fonts/NetflixSansIcon.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "NetflixSansLight";
+    src: url(fonts/NetflixSansLight.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "NetflixSansMedium";
+    src: url(fonts/NetflixSansMedium.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "NetflixSansThin";
+    src: url(fonts/NetflixSansThin.ttf) format('truetype');
+}
+
+
+.header{
+    width: 100%;
+    height: auto;
+    display:flex;
+    border-style: solid;
+    border-color: red;
+    border-radius: 5px;
+}
+
+.titleimage{
+    width:10%;
+    height:10%;
+}
+
+.navbar1{
+    display:inline-block;
+    width: 60%;
+    border-style: solid;
+    border-color: blue;
+    /* padding-left: 2%; */
+}
+
+.navbar1list{
+    border-style: solid;
+    border-color: blue;
+    justify-content: flex-start;
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar2{
+    display:inline-block;
+    width: 40%;
+    border-style: solid;
+    border-color: green;
+}
+
+
+/*
+.navbar1list{
+    display:flex;
+    width: 70%;
+    flex-grow: 1;
+}
+ */
+
+
+.navbar1 ul li{
+    font-family: NetflixSansRegular;
+    background-color: #000;
+    text-align: center;
+    padding-right: 2%;
+}
+
+.navbar1 ul li a{
+    text-decoration: none;
+    color: white;
+    line-height: 10px;
+}
