@@ -34,62 +34,99 @@
 }
 
 
-.header{
-    width: 100%;
-    height: auto;
+#header{
     display:flex;
-    border-style: solid;
-    border-color: red;
-    border-radius: 5px;
+    align-items: center;
+    background-color: #000;
+    position:sticky;
+    top:0%;
 }
 
-.titleimage{
+#titleimage{
+    display: inline-block;
+    margin-top: 0.2%;
     width:10%;
-    height:10%;
+    height: 1%;
 }
 
-.navbar1{
+
+#navbar1{
     display:inline-block;
-    width: 60%;
-    border-style: solid;
-    border-color: blue;
-    /* padding-left: 2%; */
+    width: 70%;
 }
 
-.navbar1list{
-    border-style: solid;
-    border-color: blue;
+#navbar1list{
+    display: flex;
     justify-content: flex-start;
     list-style-type: none;
-    display: flex;
-}
-
-.navbar2{
-    display:inline-block;
-    width: 40%;
-    border-style: solid;
-    border-color: green;
 }
 
 
-/*
-.navbar1list{
+#navbar2{
     display:flex;
-    width: 70%;
-    flex-grow: 1;
+    align-items: center;
+    width: 20%;
 }
- */
+
+#icons{
+    width:80%;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
 
 
-.navbar1 ul li{
+#navbar2 img{
+    display:inline-block;
+    width: 13%;
+}
+
+#arrow{
+    width:20%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#arrow img{
+    width: 20%;
+}
+
+/* #searchicon{
+    width:6%;
+    height:50%;
+}
+
+#notificon{
+    margin-top: 1%;
+    width:4%;
+    height:35%;
+}
+
+#profileicon{
+    border-radius:8%;
+    width:4%;
+    height:40%;
+    margin-right: 1%;
+}
+
+#caret{
+    width:2%;
+    height:26%;
+    margin-right: 9%;
+} */
+
+
+
+#navbar1 ul li{
     font-family: NetflixSansRegular;
     background-color: #000;
     text-align: center;
     padding-right: 2%;
 }
 
-.navbar1 ul li a{
+#navbar1 ul li a{
     text-decoration: none;
     color: white;
     line-height: 10px;
 }
+
