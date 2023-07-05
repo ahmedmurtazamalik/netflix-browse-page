@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 @font-face {
     font-family: "NetflixSansRegular";
     src: url(fonts/NetflixSansRegular.ttf) format('truetype');
@@ -33,6 +39,18 @@
     src: url(fonts/NetflixSansThin.ttf) format('truetype');
 }
 
+#main{
+    border-style: solid;
+    border-color: black;
+}
+
+#video-container{
+    width: 100%;
+    height:40rem;
+    border-style: solid;
+    border-color: green;
+}
+
 
 #header{
     display:flex;
@@ -45,7 +63,8 @@
 #titleimage{
     display: inline-block;
     margin-top: 0.2%;
-    margin-left: 2%;
+    margin-left: 1%;
+    margin-right: 2%;
     width:10%;
     height: 1%;
 }
@@ -54,6 +73,7 @@
 #navbar1{
     display:inline-block;
     width: 70%;
+
 }
 
 #navbar1list{
@@ -119,7 +139,7 @@
 
 
 #navbar1 ul li{
-    font-family: NetflixSansRegular;
+    font-family: NetflixSansLight;
     background-color: #000;
     text-align: center;
     padding-right: 2%;
@@ -131,3 +151,130 @@
     line-height: 10px;
 }
 
+#trending{
+    background-color: black;
+    font-family: NetflixSansLight;
+    color:white;
+    padding-left: 2%;
+    padding-bottom: 0.5%;
+    padding-top: 1%;
+}
+
+#trendingsection{
+    height:10rem;
+    border-style: solid;
+    border-color: blue;
+}
+
+
+#newreleases{
+    margin-top: 3.5%;
+    background-color: black;
+    font-family: NetflixSansLight;
+    color:white;
+    padding-left: 2%;
+    padding-bottom: 0.5%;
+    padding-top: 1%;
+}
+
+#newreleasessection{
+    height:10rem;
+    border-style: solid;
+    border-color: blue;
+}
+
+#continuewatching{
+    margin-top: 3.5%;
+    background-color: black;
+    font-family: NetflixSansLight;
+    color:white;
+    padding-left: 2%;
+    padding-bottom: 0.5%;
+    padding-top: 1%;
+}
+
+#contineuwatchingsection{
+    height:10rem;
+    border-style: solid;
+    border-color: blue;
+}
+
+#actionmovies{
+    margin-top: 3.5%;
+    background-color: black;
+    font-family: NetflixSansLight;
+    color:white;
+    padding-left: 2%;
+    padding-bottom: 0.5%;
+    padding-top: 1%;
+}
+
+#actionmoviessection{
+    height:10rem;
+    border-style: solid;
+    border-color: blue;
+}
+
+#watchagain{
+    margin-top: 3.5%;
+    background-color: black;
+    font-family: NetflixSansLight;
+    color:white;
+    padding-left: 2%;
+    padding-bottom: 0.5%;
+    padding-top: 1%;
+}
+
+#watchagainsection{
+    height:10rem;
+    border-style: solid;
+    border-color: blue;
+}
+
+#animation{
+    margin-top: 3.5%;
+    background-color: black;
+    font-family: NetflixSansLight;
+    color:white;
+    padding-left: 2%;
+    padding-bottom: 0.5%;
+    padding-top: 1%;
+}
+
+#animationsection{
+    height:10rem;
+    border-style: solid;
+    border-color: blue;
+}
+
+#kdramas{
+    margin-top: 3.5%;
+    background-color: black;
+    font-family: NetflixSansLight;
+    color:white;
+    padding-left: 2%;
+    padding-bottom: 0.5%;
+    padding-top: 1%;
+}
+
+#kdramassection{
+    height:10rem;
+    border-style: solid;
+    border-color: blue;
+}
+
+#awardwinning{
+    margin-top: 3.5%;
+    background-color: black;
+    font-family: NetflixSansLight;
+    color:white;
+    padding-left: 2%;
+    padding-bottom: 0.5%;
+    padding-top: 1%;
+}
+
+#awardwinningsection{
+    height:10rem;
+    border-style: solid;
+    border-color: blue;
+}
