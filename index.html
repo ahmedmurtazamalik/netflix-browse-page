@@ -10,100 +10,239 @@
     <script src="index.js"></script>
   </head>
   <body>
+
+    <!-- MAIN DIV -->
+
     <div id="main">
 
-      <div id="header">
-        <img id="titleimage" src="https://cdn.cookielaw.org/logos/dd6b162f-1a32-456a-9cfe-897231c7763c/4345ea78-053c-46d2-b11e-09adaef973dc/Netflix_Logo_PMS.png" alt="NETFLIX">
-        
-        <div id="navbar1">
-            <ul id="navbar1list">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">TV Shows</a></li>
-                <li><a href="#">Movies</a></li>
-                <li><a href="#">New and Popular</a></li>
-                <li><a href="#">My List</a></li>
-                <li><a href="#">Browse By Languages</a></li>
-            </ul>
+
+      <!-- HEADER -->
+
+        <div id="header">
+          <img id="titleimage" src="https://cdn.cookielaw.org/logos/dd6b162f-1a32-456a-9cfe-897231c7763c/4345ea78-053c-46d2-b11e-09adaef973dc/Netflix_Logo_PMS.png" alt="NETFLIX">
+          
+          <div id="browse">
+            <ul><li><a href="#">Browse</a></li></ul>
+            <img id="caret" src="icons\caretwhite.png" alt="caret">          
+          </div>
+
+          <div id="navbar1">
+              <ul id="navbar1list">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">TV Shows</a></li>
+                  <li><a href="#">Movies</a></li>
+                  <li><a href="#">New and Popular</a></li>
+                  <li><a href="#">My List</a></li>
+                  <li><a href="#">Browse By Languages</a></li>
+              </ul>
+          </div>
+
+          <div id="navbar2">
+            <div id="icons">
+              <img id="searchicon" src="icons\search.png" alt="searchicon">
+              <img id="notificon" src="icons\notifwhite.png" alt="notificon">
+              <img id="profileicon" src="icons\profile.png" alt="profileicon">  
+            </div>
+            <div id="arrow">
+              <img id="caret" src="icons\caretwhite.png" alt="caret">
+            </div>
+          </div>    
         </div>
 
-        <div id="navbar2">
-          <div id="icons">
-            <img id="searchicon" src="icons\search.png" alt="searchicon">
-            <img id="notificon" src="icons\notifwhite.png" alt="notificon">
-            <img id="profileicon" src="icons\profile.png" alt="profileicon">  
-          </div>
-          <div id="arrow">
-            <img id="caret" src="icons\caretwhite.png" alt="caret">
-          </div>
-        </div>    
-      </div>
 
+      <!-- MAIN TRAILER -->
+        <div id="maintrailer-container">
+          <video id="maintrailer" autoplay muted loop>
+            <source src="maintrailer.mp4" type="video/mp4">
+          </video>
 
-      <div id="video-container">
-        <video id="maintrailer" autoplay muted loop>
-          <source src="maintrailer.mp4" type="video/mp4">
-        </video>
-      </div>
+          
+        </div>
 
 
 
 
-      <div id="trending">
+<!-- DIFFERENT SECTIONS -->
+
+<!-- TRENDING -->
+      <div id="trendingtitle" class="title">
         <h2 id="trending-text">Trending Now</h2>
       </div>
-      <div id="trendingsection">
-
+      <div id="trendingsection" class="section">
+        <img class="sectionimage" src="data\barbie-thumbnail.jpg" alt="barbie-thumbnail">
+        <img class="sectionimage" src="data\oppenheimer-thumbnail.jpg" alt="oppenheimer-thumbnail">
+        <img class="sectionimage" src="data\napoleon-thumbnail.jpg" alt="napoeleon-thumbnail">
+        <img class="sectionimage" src="data\mi-thumbnail.jpg" alt="mi-thumbnail">
+        <img class="sectionimage" src="data\kotfm-thumbnail.jpg" alt="kotfm-thumbnail">
+        <img class="sectionimage" src="data\barbie-thumbnail.jpg" alt="barbie-thumbnail">
+        <img class="sectionimage" src="data\oppenheimer-thumbnail.jpg" alt="oppenheimer-thumbnail">
+        <img class="sectionimage" src="data\napoleon-thumbnail.jpg" alt="napoeleon-thumbnail">
+        <img class="sectionimage" src="data\mi-thumbnail.jpg" alt="mi-thumbnail">
+        <img class="sectionimage" src="data\kotfm-thumbnail.jpg" alt="kotfm-thumbnail">
+        <img class="sectionimage" src="data\napoleon-thumbnail.jpg" alt="napoeleon-thumbnail">
+        <img class="sectionimage" src="data\mi-thumbnail.jpg" alt="mi-thumbnail">
+        <img class="sectionimage" src="data\barbie-thumbnail.jpg" alt="barbie-thumbnail">
+        <img class="sectionimage" src="data\kotfm-thumbnail.jpg" alt="kotfm-thumbnail">
+        <img class="sectionimage" src="data\oppenheimer-thumbnail.jpg" alt="oppenheimer-thumbnail">
       </div>
 
-      <div id="newreleases">
+
+      <div id="newreleasestitle" class="title">
         <h2 id="newreleases-text">New Releases</h2>
       </div>
-      <div id="newreleasessection">
-        
+      <div id="newreleasessection" class="section">
+        <img class="sectionimage" src="data\oppenheimer-thumbnail.jpg" alt="oppenheimer-thumbnail">
+        <img class="sectionimage" src="data\napoleon-thumbnail.jpg" alt="napoeleon-thumbnail">
+        <img class="sectionimage" src="data\mi-thumbnail.jpg" alt="mi-thumbnail">
+        <img class="sectionimage" src="data\oppenheimer-thumbnail.jpg" alt="oppenheimer-thumbnail">
+        <img class="sectionimage" src="data\napoleon-thumbnail.jpg" alt="napoeleon-thumbnail">
+        <img class="sectionimage" src="data\oppenheimer-thumbnail.jpg" alt="oppenheimer-thumbnail">
+        <img class="sectionimage" src="data\kotfm-thumbnail.jpg" alt="kotfm-thumbnail">
+        <img class="sectionimage" src="data\mi-thumbnail.jpg" alt="mi-thumbnail">
+        <img class="sectionimage" src="data\barbie-thumbnail.jpg" alt="barbie-thumbnail">
+        <img class="sectionimage" src="data\oppenheimer-thumbnail.jpg" alt="oppenheimer-thumbnail">
+        <img class="sectionimage" src="data\mi-thumbnail.jpg" alt="mi-thumbnail">
+        <img class="sectionimage" src="data\barbie-thumbnail.jpg" alt="barbie-thumbnail">
+        <img class="sectionimage" src="data\kotfm-thumbnail.jpg" alt="kotfm-thumbnail">
+        <img class="sectionimage" src="data\barbie-thumbnail.jpg" alt="barbie-thumbnail">
+        <img class="sectionimage" src="data\kotfm-thumbnail.jpg" alt="kotfm-thumbnail">
+        <img class="sectionimage" src="data\napoleon-thumbnail.jpg" alt="napoeleon-thumbnail">
       </div>
 
-      <div id="continuewatching">
+      <div id="continuewatchingtitle" class="title">
         <h2 id="continuewatching-text">Continue Watching</h2>
       </div>
-      <div id="contineuwatchingsection">
-        
+      <div id="continuewatchingsection" class="section">
+        <img class="sectionimage" src="data\barbie-thumbnail.jpg" alt="barbie-thumbnail">
+        <img class="sectionimage" src="data\kotfm-thumbnail.jpg" alt="kotfm-thumbnail">
+        <img class="sectionimage" src="data\barbie-thumbnail.jpg" alt="barbie-thumbnail">
+        <img class="sectionimage" src="data\kotfm-thumbnail.jpg" alt="kotfm-thumbnail">
+        <img class="sectionimage" src="data\oppenheimer-thumbnail.jpg" alt="oppenheimer-thumbnail">
+        <img class="sectionimage" src="data\mi-thumbnail.jpg" alt="mi-thumbnail">
+        <img class="sectionimage" src="data\kotfm-thumbnail.jpg" alt="kotfm-thumbnail">
+        <img class="sectionimage" src="data\mi-thumbnail.jpg" alt="mi-thumbnail">
+        <img class="sectionimage" src="data\napoleon-thumbnail.jpg" alt="napoeleon-thumbnail">
+        <img class="sectionimage" src="data\barbie-thumbnail.jpg" alt="barbie-thumbnail">
+        <img class="sectionimage" src="data\napoleon-thumbnail.jpg" alt="napoeleon-thumbnail">
+        <img class="sectionimage" src="data\mi-thumbnail.jpg" alt="mi-thumbnail">
+        <img class="sectionimage" src="data\mi-thumbnail.jpg" alt="mi-thumbnail">
+        <img class="sectionimage" src="data\napoleon-thumbnail.jpg" alt="napoeleon-thumbnail">
+        <img class="sectionimage" src="data\oppenheimer-thumbnail.jpg" alt="oppenheimer-thumbnail">
+        <img class="sectionimage" src="data\napoleon-thumbnail.jpg" alt="napoeleon-thumbnail">
+        <img class="sectionimage" src="data\oppenheimer-thumbnail.jpg" alt="oppenheimer-thumbnail">
       </div>
 
-      <div id="actionmovies">
+      <div id="actionmoviestitle" class="title">
         <h2 id="actionmovies-text">Action Movies</h2>
       </div>
-      <div id="actionmoviessection">
-        
+      <div id="actionmoviessection" class="section">
+        <img class="sectionimage" src="data\oppenheimer-thumbnail.jpg" alt="oppenheimer-thumbnail">
+        <img class="sectionimage" src="data\napoleon-thumbnail.jpg" alt="napoeleon-thumbnail">
+        <img class="sectionimage" src="data\mi-thumbnail.jpg" alt="mi-thumbnail">
+        <img class="sectionimage" src="data\oppenheimer-thumbnail.jpg" alt="oppenheimer-thumbnail">
+        <img class="sectionimage" src="data\napoleon-thumbnail.jpg" alt="napoeleon-thumbnail">
+        <img class="sectionimage" src="data\oppenheimer-thumbnail.jpg" alt="oppenheimer-thumbnail">
+        <img class="sectionimage" src="data\kotfm-thumbnail.jpg" alt="kotfm-thumbnail">
+        <img class="sectionimage" src="data\mi-thumbnail.jpg" alt="mi-thumbnail">
+        <img class="sectionimage" src="data\barbie-thumbnail.jpg" alt="barbie-thumbnail">
+        <img class="sectionimage" src="data\oppenheimer-thumbnail.jpg" alt="oppenheimer-thumbnail">
+        <img class="sectionimage" src="data\mi-thumbnail.jpg" alt="mi-thumbnail">
+        <img class="sectionimage" src="data\barbie-thumbnail.jpg" alt="barbie-thumbnail">
+        <img class="sectionimage" src="data\kotfm-thumbnail.jpg" alt="kotfm-thumbnail">
+        <img class="sectionimage" src="data\barbie-thumbnail.jpg" alt="barbie-thumbnail">
+        <img class="sectionimage" src="data\kotfm-thumbnail.jpg" alt="kotfm-thumbnail">
+        <img class="sectionimage" src="data\napoleon-thumbnail.jpg" alt="napoeleon-thumbnail">
       </div>
 
-      <div id="watchagain">
+      <div id="watchagaintitle" class="title">
         <h2 id="watchagain-text">Watch It Again</h2>
       </div>
-      <div id="watchagainsection">
-        
+      <div id="watchagainsection" class="section">
+        <img class="sectionimage" src="data\oppenheimer-thumbnail.jpg" alt="oppenheimer-thumbnail">
+        <img class="sectionimage" src="data\napoleon-thumbnail.jpg" alt="napoeleon-thumbnail">
+        <img class="sectionimage" src="data\mi-thumbnail.jpg" alt="mi-thumbnail">
+        <img class="sectionimage" src="data\oppenheimer-thumbnail.jpg" alt="oppenheimer-thumbnail">
+        <img class="sectionimage" src="data\napoleon-thumbnail.jpg" alt="napoeleon-thumbnail">
+        <img class="sectionimage" src="data\oppenheimer-thumbnail.jpg" alt="oppenheimer-thumbnail">
+        <img class="sectionimage" src="data\kotfm-thumbnail.jpg" alt="kotfm-thumbnail">
+        <img class="sectionimage" src="data\mi-thumbnail.jpg" alt="mi-thumbnail">
+        <img class="sectionimage" src="data\barbie-thumbnail.jpg" alt="barbie-thumbnail">
+        <img class="sectionimage" src="data\oppenheimer-thumbnail.jpg" alt="oppenheimer-thumbnail">
+        <img class="sectionimage" src="data\mi-thumbnail.jpg" alt="mi-thumbnail">
+        <img class="sectionimage" src="data\barbie-thumbnail.jpg" alt="barbie-thumbnail">
+        <img class="sectionimage" src="data\kotfm-thumbnail.jpg" alt="kotfm-thumbnail">
+        <img class="sectionimage" src="data\barbie-thumbnail.jpg" alt="barbie-thumbnail">
+        <img class="sectionimage" src="data\kotfm-thumbnail.jpg" alt="kotfm-thumbnail">
+        <img class="sectionimage" src="data\napoleon-thumbnail.jpg" alt="napoeleon-thumbnail">
       </div>
 
-      <div id="animation">
+      <div id="animationtitle" class="title">
         <h2 id="animation-text">Animation</h2>
       </div>
-      <div id="animationsection">
-        
+      <div id="animationsection" class="section">
+        <img class="sectionimage" src="data\barbie-thumbnail.jpg" alt="barbie-thumbnail">
+        <img class="sectionimage" src="data\oppenheimer-thumbnail.jpg" alt="oppenheimer-thumbnail">
+        <img class="sectionimage" src="data\napoleon-thumbnail.jpg" alt="napoeleon-thumbnail">
+        <img class="sectionimage" src="data\mi-thumbnail.jpg" alt="mi-thumbnail">
+        <img class="sectionimage" src="data\kotfm-thumbnail.jpg" alt="kotfm-thumbnail">
+        <img class="sectionimage" src="data\barbie-thumbnail.jpg" alt="barbie-thumbnail">
+        <img class="sectionimage" src="data\oppenheimer-thumbnail.jpg" alt="oppenheimer-thumbnail">
+        <img class="sectionimage" src="data\napoleon-thumbnail.jpg" alt="napoeleon-thumbnail">
+        <img class="sectionimage" src="data\mi-thumbnail.jpg" alt="mi-thumbnail">
+        <img class="sectionimage" src="data\kotfm-thumbnail.jpg" alt="kotfm-thumbnail">
+        <img class="sectionimage" src="data\napoleon-thumbnail.jpg" alt="napoeleon-thumbnail">
+        <img class="sectionimage" src="data\mi-thumbnail.jpg" alt="mi-thumbnail">
+        <img class="sectionimage" src="data\barbie-thumbnail.jpg" alt="barbie-thumbnail">
+        <img class="sectionimage" src="data\kotfm-thumbnail.jpg" alt="kotfm-thumbnail">
+        <img class="sectionimage" src="data\oppenheimer-thumbnail.jpg" alt="oppenheimer-thumbnail">        
       </div>
 
-      <div id="kdramas">
+      <div id="kdramastitle" class="title">
         <h2 id="kdramas-text">K-Dramas</h2>
       </div>
-      <div id="kdramassection">
-        
+      <div id="kdramassection" class="section">
+        <img class="sectionimage" src="data\barbie-thumbnail.jpg" alt="barbie-thumbnail">
+        <img class="sectionimage" src="data\kotfm-thumbnail.jpg" alt="kotfm-thumbnail">
+        <img class="sectionimage" src="data\barbie-thumbnail.jpg" alt="barbie-thumbnail">
+        <img class="sectionimage" src="data\kotfm-thumbnail.jpg" alt="kotfm-thumbnail">
+        <img class="sectionimage" src="data\oppenheimer-thumbnail.jpg" alt="oppenheimer-thumbnail">
+        <img class="sectionimage" src="data\mi-thumbnail.jpg" alt="mi-thumbnail">
+        <img class="sectionimage" src="data\kotfm-thumbnail.jpg" alt="kotfm-thumbnail">
+        <img class="sectionimage" src="data\mi-thumbnail.jpg" alt="mi-thumbnail">
+        <img class="sectionimage" src="data\napoleon-thumbnail.jpg" alt="napoeleon-thumbnail">
+        <img class="sectionimage" src="data\barbie-thumbnail.jpg" alt="barbie-thumbnail">
+        <img class="sectionimage" src="data\napoleon-thumbnail.jpg" alt="napoeleon-thumbnail">
+        <img class="sectionimage" src="data\mi-thumbnail.jpg" alt="mi-thumbnail">
+        <img class="sectionimage" src="data\mi-thumbnail.jpg" alt="mi-thumbnail">
+        <img class="sectionimage" src="data\napoleon-thumbnail.jpg" alt="napoeleon-thumbnail">
+        <img class="sectionimage" src="data\oppenheimer-thumbnail.jpg" alt="oppenheimer-thumbnail">
+        <img class="sectionimage" src="data\napoleon-thumbnail.jpg" alt="napoeleon-thumbnail">
+        <img class="sectionimage" src="data\oppenheimer-thumbnail.jpg" alt="oppenheimer-thumbnail">
       </div>
 
-      <div id="awardwinning">
+      <div id="awardwinningtitle" class="title">
         <h2 id="awardwinning-text">Award Winning</h2>
       </div>
-      <div id="awardwinningsection">
-        
+      <div id="awardwinningsection" class="section">
+        <img class="sectionimage" src="data\barbie-thumbnail.jpg" alt="barbie-thumbnail">
+        <img class="sectionimage" src="data\oppenheimer-thumbnail.jpg" alt="oppenheimer-thumbnail">
+        <img class="sectionimage" src="data\napoleon-thumbnail.jpg" alt="napoeleon-thumbnail">
+        <img class="sectionimage" src="data\mi-thumbnail.jpg" alt="mi-thumbnail">
+        <img class="sectionimage" src="data\kotfm-thumbnail.jpg" alt="kotfm-thumbnail">
+        <img class="sectionimage" src="data\barbie-thumbnail.jpg" alt="barbie-thumbnail">
+        <img class="sectionimage" src="data\oppenheimer-thumbnail.jpg" alt="oppenheimer-thumbnail">
+        <img class="sectionimage" src="data\napoleon-thumbnail.jpg" alt="napoeleon-thumbnail">
+        <img class="sectionimage" src="data\mi-thumbnail.jpg" alt="mi-thumbnail">
+        <img class="sectionimage" src="data\kotfm-thumbnail.jpg" alt="kotfm-thumbnail">
+        <img class="sectionimage" src="data\napoleon-thumbnail.jpg" alt="napoeleon-thumbnail">
+        <img class="sectionimage" src="data\mi-thumbnail.jpg" alt="mi-thumbnail">
+        <img class="sectionimage" src="data\barbie-thumbnail.jpg" alt="barbie-thumbnail">
+        <img class="sectionimage" src="data\kotfm-thumbnail.jpg" alt="kotfm-thumbnail">
+        <img class="sectionimage" src="data\oppenheimer-thumbnail.jpg" alt="oppenheimer-thumbnail">
       </div>
 
     </div>
+
+
   </body>
 </html>

@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #000;
 }
 
 @font-face {
@@ -55,6 +56,7 @@
 }
 
 #maintrailer{
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -68,8 +70,9 @@
     align-items: center;
     background-color: #000;
     position:sticky;
-    top:0%;
-    z-index: 1;
+    top:0;
+    z-index: 2;
+    /* background: none; */
 }
 
 #titleimage{
@@ -81,6 +84,26 @@
     height: 1%;
 }
 
+#browse{
+    display: none;
+    width:70%;
+    justify-content: flex-start;
+    font-family: NetflixSansLight;
+    background-color: #000;
+    text-align: center;
+    line-height: 10px;
+}
+
+#browse img{
+    width:5%;
+}
+
+#browse ul li a{
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    margin-right: 5px;
+}
 
 #navbar1{
     display:inline-block;
@@ -98,7 +121,7 @@
 #navbar2{
     display:flex;
     align-items: center;
-    width: 18%;
+    width: 20%;
 }
 
 #icons{
@@ -124,32 +147,6 @@
     width: 20%;
 }
 
-/* #searchicon{
-    width:6%;
-    height:50%;
-}
-
-#notificon{
-    margin-top: 1%;
-    width:4%;
-    height:35%;
-}
-
-#profileicon{
-    border-radius:8%;
-    width:4%;
-    height:40%;
-    margin-right: 1%;
-}
-
-#caret{
-    width:2%;
-    height:26%;
-    margin-right: 9%;
-} */
-
-
-
 #navbar1 ul li{
     font-family: NetflixSansLight;
     background-color: #000;
@@ -163,7 +160,23 @@
     line-height: 10px;
 }
 
-#trending{
+.section{
+    height:11rem;
+    width:100%;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+}
+
+.sectionimage{
+    display: inline-block;
+    width:100%;
+    height: 100%;
+    border-radius: 2%;
+    margin-right: 0.25%;
+}
+
+#trendingtitle{
     background-color: black;
     font-family: NetflixSansLight;
     color:white;
@@ -172,14 +185,7 @@
     padding-top: 1%;
 }
 
-#trendingsection{
-    height:10rem;
-    border-style: solid;
-    border-color: blue;
-}
-
-
-#newreleases{
+.title{
     margin-top: 3.5%;
     background-color: black;
     font-family: NetflixSansLight;
@@ -189,104 +195,157 @@
     padding-top: 1%;
 }
 
-#newreleasessection{
-    height:10rem;
-    border-style: solid;
-    border-color: blue;
+#trendingsection::-webkit-scrollbar{
+    width:0;
+    height: 10px;
+    background: transparent;
 }
 
-#continuewatching{
-    margin-top: 3.5%;
-    background-color: black;
-    font-family: NetflixSansLight;
-    color:white;
-    padding-left: 2%;
-    padding-bottom: 0.5%;
-    padding-top: 1%;
+#trendingsection::-webkit-scrollbar-track{
+    background: black;
 }
 
-#contineuwatchingsection{
-    height:10rem;
-    border-style: solid;
-    border-color: blue;
+#trendingsection::-webkit-scrollbar-thumb{
+    background: transparent;
+
 }
 
-#actionmovies{
-    margin-top: 3.5%;
-    background-color: black;
-    font-family: NetflixSansLight;
-    color:white;
-    padding-left: 2%;
-    padding-bottom: 0.5%;
-    padding-top: 1%;
+#trendingsection::-webkit-scrollbar-thumb:hover{
+    background: rgb(97, 86, 86);
+    border-radius: 5px;
 }
 
-#actionmoviessection{
-    height:10rem;
-    border-style: solid;
-    border-color: blue;
+
+#newreleasessection::-webkit-scrollbar{
+    width:0;
+    height: 10px;
+    background: transparent;
 }
 
-#watchagain{
-    margin-top: 3.5%;
-    background-color: black;
-    font-family: NetflixSansLight;
-    color:white;
-    padding-left: 2%;
-    padding-bottom: 0.5%;
-    padding-top: 1%;
+#newreleasessection::-webkit-scrollbar-track{
+    background: black;
 }
 
-#watchagainsection{
-    height:10rem;
-    border-style: solid;
-    border-color: blue;
+#newreleasessection::-webkit-scrollbar-thumb{
+    background: transparent;
 }
 
-#animation{
-    margin-top: 3.5%;
-    background-color: black;
-    font-family: NetflixSansLight;
-    color:white;
-    padding-left: 2%;
-    padding-bottom: 0.5%;
-    padding-top: 1%;
+#newreleasessection::-webkit-scrollbar-thumb:hover{
+    background: rgb(97, 86, 86);
 }
 
-#animationsection{
-    height:10rem;
-    border-style: solid;
-    border-color: blue;
+
+#continuewatchingsection::-webkit-scrollbar{
+    width:0;
+    height: 10px;
+    background: transparent;
 }
 
-#kdramas{
-    margin-top: 3.5%;
-    background-color: black;
-    font-family: NetflixSansLight;
-    color:white;
-    padding-left: 2%;
-    padding-bottom: 0.5%;
-    padding-top: 1%;
+#continuewatchingsection::-webkit-scrollbar-track{
+    background: black;
 }
 
-#kdramassection{
-    height:10rem;
-    border-style: solid;
-    border-color: blue;
+#continuewatchingsection::-webkit-scrollbar-thumb{
+    background: transparent;
 }
 
-#awardwinning{
-    margin-top: 3.5%;
-    background-color: black;
-    font-family: NetflixSansLight;
-    color:white;
-    padding-left: 2%;
-    padding-bottom: 0.5%;
-    padding-top: 1%;
+#continuewatchingsection::-webkit-scrollbar-thumb:hover{
+    background: rgb(97, 86, 86);
 }
 
-#awardwinningsection{
-    height:10rem;
-    border-style: solid;
-    border-color: blue;
+
+#actionmoviessection::-webkit-scrollbar{
+    width:0;
+    height: 10px;
+    background: transparent;
 }
+
+#actionmoviessection::-webkit-scrollbar-track{
+    background: black;
+}
+
+#actionmoviessection::-webkit-scrollbar-thumb{
+    background: transparent;
+}
+
+#actionmoviessection::-webkit-scrollbar-thumb:hover{
+    background: rgb(97, 86, 86);
+}
+
+
+#watchagainsection::-webkit-scrollbar{
+    width:0;
+    height: 10px;
+    background: transparent;
+}
+
+#watchagainsection::-webkit-scrollbar-track{
+    background: black;
+}
+
+#watchagainsection::-webkit-scrollbar-thumb{
+    background: transparent;
+}
+
+#watchagainsection::-webkit-scrollbar-thumb:hover{
+    background: rgb(97, 86, 86);
+}
+
+
+#animationsection::-webkit-scrollbar{
+    width:0;
+    height: 10px;
+    background: transparent;
+}
+
+#animationsection::-webkit-scrollbar-track{
+    background: black;
+}
+
+#animationsection::-webkit-scrollbar-thumb{
+    background: transparent;
+}
+
+#animationsection::-webkit-scrollbar-thumb:hover{
+    background: rgb(97, 86, 86);
+}
+
+
+#kdramassection::-webkit-scrollbar{
+    width:0;
+    height: 10px;
+    background: transparent;
+}
+
+#kdramassection::-webkit-scrollbar-track{
+    background: black;
+}
+
+#kdramassection::-webkit-scrollbar-thumb{
+    background: transparent;
+}
+
+#kdramassection::-webkit-scrollbar-thumb:hover{
+    background: rgb(97, 86, 86);
+}
+
+
+#awardwinningsection::-webkit-scrollbar{
+    width:0;
+    height: 10px;
+    background: transparent;
+}
+
+#awardwinningsection::-webkit-scrollbar-track{
+    background: black;
+}
+
+#awardwinningsection::-webkit-scrollbar-thumb{
+    background: transparent;
+}
+
+#awardwinningsection::-webkit-scrollbar-thumb:hover{
+    background: rgb(97, 86, 86);
+}
+
+
