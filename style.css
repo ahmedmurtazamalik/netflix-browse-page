@@ -167,6 +167,28 @@
     overflow-x: auto;
 }
 
+.section::-webkit-scrollbar{
+    width:0;
+    height: 10px;
+    background: transparent;
+}
+
+.section::-webkit-scrollbar-track{
+    background: black;
+}
+
+.section::-webkit-scrollbar-thumb{
+    background: transparent;
+
+}
+
+.section::-webkit-scrollbar-thumb:hover{
+    background: rgb(97, 86, 86);
+    border-radius: 5px;
+}
+
+
+
 .sectionimage{
     display: inline-block;
     width:100%;
@@ -184,6 +206,12 @@
     padding-top: 1%;
 }
 
+#awardwinningsection{
+    margin-bottom: 10rem;
+    /* border: blue;
+    border-style: solid; */
+}
+
 .title{
     margin-top: 3.5%;
     background-color: black;
@@ -194,157 +222,76 @@
     padding-top: 1%;
 }
 
-#trendingsection::-webkit-scrollbar{
-    width:0;
-    height: 10px;
-    background: transparent;
+#footer{
+    width: 82.5%;
+    margin-left: 17.5%;
+    height: 15rem;
+    /* border-style: solid;
+    border-color: greenyellow; */
 }
 
-#trendingsection::-webkit-scrollbar-track{
-    background: black;
+#footericons{
+    height: 16%;
+    width:12%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 0.5%;
+    /* border-style: solid;
+    border-color: white; */
 }
 
-#trendingsection::-webkit-scrollbar-thumb{
-    background: transparent;
+#footericons img{
+    width: 40%;
+    height: 100%;
+    cursor: pointer;
+    margin-right: 2%;
 
 }
 
-#trendingsection::-webkit-scrollbar-thumb:hover{
-    background: rgb(97, 86, 86);
-    border-radius: 5px;
+  .footerlistcontainer{
+    font-size: 0;
+  }
+
+  .footerlist {
+    /* border-style: solid;
+    border-color: white; */
+    width: 25%;
+    height: 42%;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 15px; /* Reset font size for content */
+  }
+
+  .footerlist ul {
+    font-family: NetflixSansRegular;
+    list-style-type: none;
+  }
+
+  .footerlist ul li {
+    margin-bottom: 10px;
+  }
+
+  .footerlist ul li a{
+    text-decoration: none;
+    color:gray;
 }
 
+  
+  @media (min-width: 576px) {
+    .footerlist {
+      width: 50%;
+    }
+  }
 
-#newreleasessection::-webkit-scrollbar{
-    width:0;
-    height: 10px;
-    background: transparent;
-}
+  @media (min-width: 768px) {
+    .footerlist {
+      width: 33.33%;
+    }
+  }
 
-#newreleasessection::-webkit-scrollbar-track{
-    background: black;
-}
-
-#newreleasessection::-webkit-scrollbar-thumb{
-    background: transparent;
-}
-
-#newreleasessection::-webkit-scrollbar-thumb:hover{
-    background: rgb(97, 86, 86);
-}
-
-
-#continuewatchingsection::-webkit-scrollbar{
-    width:0;
-    height: 10px;
-    background: transparent;
-}
-
-#continuewatchingsection::-webkit-scrollbar-track{
-    background: black;
-}
-
-#continuewatchingsection::-webkit-scrollbar-thumb{
-    background: transparent;
-}
-
-#continuewatchingsection::-webkit-scrollbar-thumb:hover{
-    background: rgb(97, 86, 86);
-}
-
-
-#actionmoviessection::-webkit-scrollbar{
-    width:0;
-    height: 10px;
-    background: transparent;
-}
-
-#actionmoviessection::-webkit-scrollbar-track{
-    background: black;
-}
-
-#actionmoviessection::-webkit-scrollbar-thumb{
-    background: transparent;
-}
-
-#actionmoviessection::-webkit-scrollbar-thumb:hover{
-    background: rgb(97, 86, 86);
-}
-
-
-#watchagainsection::-webkit-scrollbar{
-    width:0;
-    height: 10px;
-    background: transparent;
-}
-
-#watchagainsection::-webkit-scrollbar-track{
-    background: black;
-}
-
-#watchagainsection::-webkit-scrollbar-thumb{
-    background: transparent;
-}
-
-#watchagainsection::-webkit-scrollbar-thumb:hover{
-    background: rgb(97, 86, 86);
-}
-
-
-#animationsection::-webkit-scrollbar{
-    width:0;
-    height: 10px;
-    background: transparent;
-}
-
-#animationsection::-webkit-scrollbar-track{
-    background: black;
-}
-
-#animationsection::-webkit-scrollbar-thumb{
-    background: transparent;
-}
-
-#animationsection::-webkit-scrollbar-thumb:hover{
-    background: rgb(97, 86, 86);
-}
-
-
-#kdramassection::-webkit-scrollbar{
-    width:0;
-    height: 10px;
-    background: transparent;
-}
-
-#kdramassection::-webkit-scrollbar-track{
-    background: black;
-}
-
-#kdramassection::-webkit-scrollbar-thumb{
-    background: transparent;
-}
-
-#kdramassection::-webkit-scrollbar-thumb:hover{
-    background: rgb(97, 86, 86);
-}
-
-
-#awardwinningsection::-webkit-scrollbar{
-    width:0;
-    height: 10px;
-    background: transparent;
-}
-
-#awardwinningsection::-webkit-scrollbar-track{
-    background: black;
-}
-
-#awardwinningsection::-webkit-scrollbar-thumb{
-    background: transparent;
-}
-
-#awardwinningsection::-webkit-scrollbar-thumb:hover{
-    background: rgb(97, 86, 86);
-}
-
-
+  @media (min-width: 992px) {
+    .footerlist {
+      width: 25%;
+    }
+  }
