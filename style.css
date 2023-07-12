@@ -94,6 +94,7 @@
 
 #browse img{
     width:5%;
+    cursor: pointer;
 }
 
 #browse ul li a{
@@ -133,6 +134,7 @@
 #navbar2 img{
     display:inline-block;
     width: 13%;
+    cursor: pointer;
 }
 
 #arrow{
