@@ -11,6 +11,7 @@
       browse.style.display = 'none';
     }
   }
+
   window.addEventListener('resize', headerSizeChanges);
   window.addEventListener('DOMContentLoaded', headerSizeChanges);
  
@@ -53,7 +54,6 @@
     const singlesection = imageSections[i];
     for (let j = 0; j < 15; j++) {
       const randomIndex = Math.floor(Math.random() * thumbnails.length);
-      console.log(randomIndex);
       const randomThumbnail = thumbnails[randomIndex].cloneNode(true);
       singlesection.appendChild(randomThumbnail);
     }
