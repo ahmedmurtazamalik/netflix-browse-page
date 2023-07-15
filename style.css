@@ -169,6 +169,79 @@
     overflow-x: auto;
 }
 
+#topfivesection{
+    height:11rem;
+    width:100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-style: solid;
+    border-color: white;
+    position: relative;
+}
+
+
+.buttons{
+
+    background: transparent;
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    height: 20%;
+}
+
+.button1{
+    position: absolute;
+    width: 4rem;
+    height: 5rem;
+    font-size: 4rem;
+    top: 25%;
+    left: 0.25%;
+    z-index: 3;
+    color:rgb(214, 214, 214);
+    background-color: rgb(91, 85, 85);
+    border-style: solid;
+    border-radius: 0.35rem;
+    cursor: pointer;
+    opacity: 80%;
+}
+
+.button1:hover{
+    opacity: 100%;
+    color: white;
+}
+
+.button2{
+    position: absolute;
+    width: 4rem;
+    height: 5rem;
+    font-size: 4rem;
+    top: 25%;
+    left: 95.5%;
+    z-index: 3;
+    color:rgb(255, 255, 255);
+    background-color: rgb(91, 85, 85);
+    border-style: solid;
+    border-radius: 0.35rem;
+    cursor: pointer;
+    opacity: 80%;
+}
+
+.button2:hover{
+    opacity: 100%;
+    color: white;
+}
+
+.specialsectionimage{
+    display: inline-block;
+    width:100%;
+    height: 100%;
+    border-radius: 2%;
+    margin-right: 0.25%;
+    cursor: pointer;
+    transition: 1s;
+}
+
 .section::-webkit-scrollbar{
     width:0;
     height: 10px;
@@ -181,7 +254,6 @@
 
 .section::-webkit-scrollbar-thumb{
     background: transparent;
-
 }
 
 .section::-webkit-scrollbar-thumb:hover{
