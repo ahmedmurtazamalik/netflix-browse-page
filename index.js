@@ -15,61 +15,37 @@
   window.addEventListener('resize', headerSizeChanges);
   window.addEventListener('DOMContentLoaded', headerSizeChanges);
  
-  let wonkaImage = document.createElement('img');
+
   let wonkaSlide = document.createElement('img');
-  wonkaImage.classList.add("sectionimage");
   wonkaSlide.classList.add("specialsectionimage");
-  wonkaImage.src = 'data/wonka-thumbnail.jpg';
-  wonkaImage.alt = 'wonka-thumbnail';
   wonkaSlide.src = 'data/wonka-thumbnail.jpg';
   wonkaSlide.alt = 'wonka-thumbnail';
 
-  let oppenheimerImage = document.createElement('img');
   let oppenheimerSlide = document.createElement('img');
-  oppenheimerImage.classList.add("sectionimage");
   oppenheimerSlide.classList.add("specialsectionimage");
-  oppenheimerImage.src = 'data/oppenheimer-thumbnail.jpg';
-  oppenheimerImage.alt = 'oppenheimer-thumbnail';
   oppenheimerSlide.src = 'data/oppenheimer-thumbnail.jpg';
   oppenheimerSlide.alt = 'oppenheimer-thumbnail';
 
 
-  let napoleonImage = document.createElement('img');
   let napoleonSlide = document.createElement('img');
-  napoleonImage.classList.add("sectionimage");
   napoleonSlide.classList.add("specialsectionimage");
-  napoleonImage.src = 'data/napoleon-thumbnail.jpg';
-  napoleonImage.alt = 'napoleon-thumbnail';
   napoleonSlide.src = 'data/napoleon-thumbnail.jpg';
   napoleonSlide.alt = 'napoleon-thumbnail';
 
 
-  let miImage = document.createElement('img');
   let miSlide = document.createElement('img');
-  miImage.classList.add("sectionimage");
   miSlide.classList.add("specialsectionimage");
-  miImage.src = 'data/mi-thumbnail.jpg';
-  miImage.alt = 'mi-thumbnail';
   miSlide.src = 'data/mi-thumbnail.jpg';
   miSlide.alt = 'mi-thumbnail';
 
-  let kotfmImage = document.createElement('img');
   let kotfmSlide = document.createElement('img');
-  kotfmImage.classList.add("sectionimage");
   kotfmSlide.classList.add("specialsectionimage");
-  kotfmImage.src = 'data/kotfm-thumbnail.jpg';
-  kotfmImage.alt = 'kotfm-thumbnail';
   kotfmSlide.src = 'data/kotfm-thumbnail.jpg';
   kotfmSlide.alt = 'kotfm-thumbnail';
 
-
+  const sources = ["data/wonka-trailer.mp4","data/oppenheimer-trailer.mp4","data/napoleon-trailer.mp4","data/mi-trailer.mp4","data/kotfm-trailer.mp4"];
+  const posters = ["data/wonka-thumbnail.jpg","data/oppenheimer-thumbnail.jpg","data/napoleon-thumbnail.jpg","data/mi-thumbnail.jpg","data/kotfm-thumbnail.jpg"];
   const slides = [];
-  const thumbnails = [];
-  thumbnails.push(wonkaImage);
-  thumbnails.push(oppenheimerImage);
-  thumbnails.push(napoleonImage);
-  thumbnails.push(miImage);
-  thumbnails.push(kotfmImage);
   slides.push(wonkaSlide);
   slides.push(kotfmSlide);
   slides.push(oppenheimerSlide);
@@ -81,12 +57,85 @@
 
   for (let i = 0; i < imageSections.length; i++) {
     const singlesection = imageSections[i];
+  
     for (let j = 0; j < 15; j++) {
-      const randomIndex = Math.floor(Math.random() * thumbnails.length);
-      const randomThumbnail = thumbnails[randomIndex].cloneNode(true);
-      singlesection.appendChild(randomThumbnail);
+      const imageDiv = document.createElement('div');
+      imageDiv.classList.add("imagediv");
+      singlesection.appendChild(imageDiv);
     }
+
+    const imageDivs = singlesection.querySelectorAll(".imagediv");
+    for (let j = 0; j < imageDivs.length; j++) {
+      const randomIndex = Math.floor(Math.random() * sources.length);
+      const randomVideoSource = sources[randomIndex];
+      const poster = posters[randomIndex];
+
+      const videoSource = document.createElement('source');
+      videoSource.src = randomVideoSource;
+      videoSource.type = 'video/mp4';
+      const videoTrailer = document.createElement('video');
+      videoTrailer.classList.add("trailer");
+      videoTrailer.muted = true;
+      videoTrailer.loop = true;
+      videoTrailer.width = '295.81';
+      videoTrailer.height = '166.4';
+      videoTrailer.poster = poster;
+      imageDivs[j].appendChild(videoTrailer);
+      videoTrailer.appendChild(videoSource);
+
+      const currentThumbnail = document.createElement('img');
+      currentThumbnail.classList.add("image");
+      currentThumbnail.src = posters[randomIndex];
+      currentThumbnail.style.display = 'none';
+      imageDivs[j].appendChild(currentThumbnail);
+    }
+
   }
+
+
+  for (let i = 0; i < imageSections.length; i++) {
+    const singlesection = imageSections[i];
+    const imageDivs = singlesection.querySelectorAll(".imagediv");
+  
+    const playVideo = (event) => {
+      const videoElement = event.currentTarget.querySelector('.trailer');
+      // if (videoElement) {
+        videoElement.style.display = 'block';
+        
+        // Hide the thumbnail image
+        const thumbnailImage = event.currentTarget.querySelector('.image');
+        // if (thumbnailImage) {
+          thumbnailImage.style.display = 'none';
+        // }
+        
+        // Set the current time of the video to 0 (start of the video)
+        videoElement.currentTime = 0;
+        
+        // Play the video
+        videoElement.play();
+      // }
+    };
+  
+    const pauseVideo = (event) => {
+      const videoElement = event.currentTarget.querySelector('.trailer');
+      // if (videoElement) {
+        videoElement.pause();
+        videoElement.style.display = 'none';
+    
+        // Show the thumbnail image
+        const thumbnailImage = event.currentTarget.querySelector('.image');
+        // if (thumbnailImage) {
+          thumbnailImage.style.display = 'block';
+        // }
+      // }
+    };
+  
+    imageDivs.forEach((imageDiv) => {
+      imageDiv.addEventListener('mouseenter', playVideo);
+      imageDiv.addEventListener('mouseleave', pauseVideo);
+    });
+  }
+  
 
   const specialsection = document.getElementById('topfivesection');
     for (let i = 0; i < slides.length ; i++) {
@@ -128,3 +177,24 @@
       }
     )
   }
+
+
+
+const sections = document.querySelectorAll(".section");
+
+const handleMouseEnter = (event) => {
+  const currentSection = event.currentTarget.parentNode;
+  currentSection.style.height = "15rem"; 
+};
+
+const handleMouseLeave = (event) => {
+  const currentSection = event.currentTarget.parentNode;
+  currentSection.style.height = "11rem"; 
+};
+
+const imageDivs = document.querySelectorAll(".imagediv");
+
+imageDivs.forEach((imageDiv) => {
+  imageDiv.addEventListener('mouseenter', handleMouseEnter);
+  imageDiv.addEventListener('mouseleave', handleMouseLeave);
+});
