@@ -1,221 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Netflix Browse Page Project</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Netflix_icon.svg/2048px-Netflix_icon.svg.png" type="image/x-icon">
-    <script src="index.js" defer></script>
-  </head>
-  <body>
 
-    <!-- MAIN DIV -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Netflix Browse Page Project</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon"
+    href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Netflix_icon.svg/2048px-Netflix_icon.svg.png"
+    type="image/x-icon">
+  <script src="index.js" defer></script>
+</head>
 
-    <div id="main">
+<body>
+
+  <!-- MAIN DIV -->
+
+  <div id="main">
 
 
-      <!-- HEADER -->
+    <!-- HEADER -->
 
-        <div id="header">
-          <img id="titleimage" src="https://cdn.cookielaw.org/logos/dd6b162f-1a32-456a-9cfe-897231c7763c/4345ea78-053c-46d2-b11e-09adaef973dc/Netflix_Logo_PMS.png" alt="NETFLIX">
-          
-          <div id="browse">
-            <ul><li><a href="#">Browse</a></li></ul>
-            <img id="caret" src="icons\caretwhite.png" alt="caret">          
-          </div>
+    <div id="header">
+      <img id="titleimage"
+        src="https://cdn.cookielaw.org/logos/dd6b162f-1a32-456a-9cfe-897231c7763c/4345ea78-053c-46d2-b11e-09adaef973dc/Netflix_Logo_PMS.png"
+        alt="NETFLIX">
 
-          <div id="navbar1">
-              <ul id="navbar1list">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">TV Shows</a></li>
-                  <li><a href="#">Movies</a></li>
-                  <li><a href="#">New and Popular</a></li>
-                  <li><a href="#">My List</a></li>
-                  <li><a href="#">Browse By Languages</a></li>
-              </ul>
-          </div>
+      <div id="browse">
+        <ul>
+          <li><a href="#">Browse</a></li>
+        </ul>
+        <img id="caret" src="icons\caretwhite.png" alt="caret">
+      </div>
 
-          <div id="navbar2">
-            <div id="icons">
-              <img id="searchicon" src="icons\search.png" alt="searchicon">
-              <img id="notificon" src="icons\notifwhite.png" alt="notificon">
-              <img id="profileicon" src="icons\profile.png" alt="profileicon">  
-            </div>
-            <div id="arrow">
-              <img id="caret" src="icons\caretwhite.png" alt="caret">
-            </div>
-          </div>    
+      <div id="navbar1">
+        <ul id="navbar1list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">TV Shows</a></li>
+          <li><a href="#">Movies</a></li>
+          <li><a href="#">New and Popular</a></li>
+          <li><a href="#">My List</a></li>
+          <li><a href="#">Browse By Languages</a></li>
+        </ul>
+      </div>
+
+      <div id="navbar2">
+        <div id="icons">
+          <img id="searchicon" src="icons\search.png" alt="searchicon">
+          <img id="notificon" src="icons\notifwhite.png" alt="notificon">
+          <img id="profileicon" src="icons\profile.png" alt="profileicon">
         </div>
-
-
-      <!-- MAIN TRAILER -->
-        <div id="maintrailer-container">
-          <video id="maintrailer" autoplay muted loop>
-            <source src="maintrailer.mp4" type="video/mp4">
-          </video>
-
-          
+        <div id="arrow">
+          <img id="caret" src="icons\caretwhite.png" alt="caret">
         </div>
-
-
-
-
-<!-- DIFFERENT SECTIONS -->
-
-<!-- TRENDING -->
-
-      <div id="trendingtitle" class="title">
-        <h2 id="trending-text">Trending Now</h2>
       </div>
-        <div id="trendingsection" class="section">
-
-        </div>  
+    </div>
 
 
-      <div id="newreleasestitle" class="title">
-        <h2 id="newreleases-text">New Releases</h2>
-      </div>
-      <div id="newreleasessection" class="section">
+    <!-- MAIN TRAILER -->
+    <div id="maintrailer-container">
+      <video id="maintrailer" autoplay muted loop>
+        <source src="maintrailer.mp4" type="video/mp4">
+      </video>
 
-      </div>
-
-      <div id="continuewatchingtitle" class="title">
-        <h2 id="continuewatching-text">Continue Watching</h2>
-      </div>
-      <div id="continuewatchingsection" class="section">
-
-      </div>
-
-      <div id="actionmoviestitle" class="title">
-        <h2 id="actionmovies-text">Action Movies</h2>
-      </div>
-      <div id="actionmoviessection" class="section">
-
-      </div>
-
-      <div id="watchagaintitle" class="title">
-        <h2 id="watchagain-text">Watch It Again</h2>
-      </div>
-      <div id="watchagainsection" class="section">
-
-      </div>
-
-      <div id="animationtitle" class="title">
-        <h2 id="animation-text">Animation</h2>
-      </div>
-      <div id="animationsection" class="section">
-
-      </div>
-
-
-      <div id="kdramastitle" class="title">
-        <h2 id="kdramas-text">K-Dramas</h2>
-      </div>
-      <div id="kdramassection" class="section">
-
-      </div>
-
-      <div id="topfivetitle" class="title">
-        <h2 id="topfive-text">Top 5 Movies in Pakistan Today</h2>
-      </div>
-        <div id="topfivesection" class="specialsection">
-          <div class="buttons">
-            <button onclick="goPrev()" class="button1">‹</button>
-            <button onclick="goNext()" class="button2">›</button>
-          </div>
-  
-
-        </div>  
-
-
-      <div id="awardwinningtitle" class="title">
-        <h2 id="awardwinning-text">Award Winning</h2>
-      </div>
-      <div id="awardwinningsection" class="section">
-
-      </div>
-
-
-      <div id="footer">
-        <div id="footericons">
-          <img src="icons\fb.png" alt="Facebook Icon">
-          <img src="icons\insta.png" alt="Instagram Icon">
-          <img src="icons\yt.png" alt="YouTube Icon">
-        </div>
-
-        <div class="footerlistcontainer">
-          <div id="footerlist1" class="footerlist">
-            <ul>
-              <li><a href="#">Audio Description</a></li>
-              <li><a href="#">Investor Relations</a></li>
-              <li><a href="#">Legal Notices</a></li>
-            </ul>
-          </div>
-          <div id="footerlist2" class="footerlist">
-            <ul>
-              <li><a href="#">Help Center</a></li>
-              <li><a href="#">Jobs</a></li>
-              <li><a href="#">Cookie Preferences</a></li>
-            </ul>
-          </div>
-          <div id="footerlist3" class="footerlist">
-            <ul>
-              <li><a href="#">Gift Cards</a></li>
-              <li><a href="#">Terms of Use</a></li>
-              <li><a href="#">Corporate Information</a></li>
-            </ul>
-          </div>
-          <div id="footerlist4" class="footerlist">
-            <ul>
-              <li><a href="#">Media Center</a></li>
-              <li><a href="#">Privacy</a></li>
-              <li><a href="#">Contact Us</a></li>
-            </ul>
-          </div>
-
-          <div id="footerlistalt1" class="footerlistalt">
-            <ul>
-              <li><a href="#">Audio Description</a></li>
-              <li><a href="#">Gift Cards</a></li>
-              <li><a href="#">Investor Relations</a></li>
-              <li><a href="#">Terms of Use</a></li>
-              <li><a href="#">Legal Notices</a></li>
-              <li><a href="#">Corporate Information</a></li>
-            </ul>
-          </div>
-
-          <div id="footerlistalt2" class="footerlistalt">
-            <ul>
-              <li><a href="#">Help Center</a></li>
-              <li><a href="#">Media Center</a></li>
-              <li><a href="#">Jobs</a></li>
-              <li><a href="#">Privacy</a></li>
-              <li><a href="#">Cookie Preferences</a></li>
-              <li><a href="#">Contact Us</a></li>
-            </ul>
-          </div>
-
-
-
-        </div>  
-
-        <div class="servicecode">
-          <button class="servicecodebutton">
-            Service Code
-          </button>
-        </div>
-        
-        <div class="copyright">
-          <p>© 1997-2023 Netflix, Inc.</p>
-        </div>
-
-      </div>
 
     </div>
 
 
 
-  </body>
+
+    <!-- DIFFERENT SECTIONS -->
+
+    <!-- TRENDING -->
+
+    <div id="trendingtitle" class="title">
+      <h2 id="trending-text">Trending Now</h2>
+    </div>
+    <div id="trendingsection" class="section">
+
+    </div>
+
+
+    <div id="newreleasestitle" class="title">
+      <h2 id="newreleases-text">New Releases</h2>
+    </div>
+    <div id="newreleasessection" class="section">
+
+    </div>
+
+    <div id="continuewatchingtitle" class="title">
+      <h2 id="continuewatching-text">Continue Watching</h2>
+    </div>
+    <div id="continuewatchingsection" class="section">
+
+    </div>
+
+    <div id="actionmoviestitle" class="title">
+      <h2 id="actionmovies-text">Action Movies</h2>
+    </div>
+    <div id="actionmoviessection" class="section">
+
+    </div>
+
+    <div id="watchagaintitle" class="title">
+      <h2 id="watchagain-text">Watch It Again</h2>
+    </div>
+    <div id="watchagainsection" class="section">
+
+    </div>
+
+    <div id="animationtitle" class="title">
+      <h2 id="animation-text">Animation</h2>
+    </div>
+    <div id="animationsection" class="section">
+
+    </div>
+
+
+    <div id="kdramastitle" class="title">
+      <h2 id="kdramas-text">K-Dramas</h2>
+    </div>
+    <div id="kdramassection" class="section">
+
+    </div>
+
+    <div id="topfivetitle" class="title">
+      <h2 id="topfive-text">Top 5 Movies in Pakistan Today</h2>
+    </div>
+
+    <div id="topfivesection" class="specialsection">
+      <div class="buttons">
+        <button onclick="goPrev()" class="button1">‹</button>
+        <button onclick="goNext()" class="button2">›</button>
+      </div>
+    </div>
+
+    <div id="awardwinningtitle" class="title">
+      <h2 id="awardwinning-text">Award Winning</h2>
+    </div>
+    <div id="awardwinningsection" class="section">
+
+    </div>
+
+
+    <div id="footer">
+      <div id="footericons">
+        <img src="icons\fb.png" alt="Facebook Icon">
+        <img src="icons\insta.png" alt="Instagram Icon">
+        <img src="icons\yt.png" alt="YouTube Icon">
+      </div>
+
+      <div class="footerlistcontainer">
+        <div id="footerlist1" class="footerlist">
+          <ul>
+            <li><a href="#">Audio Description</a></li>
+            <li><a href="#">Investor Relations</a></li>
+            <li><a href="#">Legal Notices</a></li>
+          </ul>
+        </div>
+        <div id="footerlist2" class="footerlist">
+          <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Cookie Preferences</a></li>
+          </ul>
+        </div>
+        <div id="footerlist3" class="footerlist">
+          <ul>
+            <li><a href="#">Gift Cards</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Corporate Information</a></li>
+          </ul>
+        </div>
+        <div id="footerlist4" class="footerlist">
+          <ul>
+            <li><a href="#">Media Center</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div id="footerlistalt1" class="footerlistalt">
+          <ul>
+            <li><a href="#">Audio Description</a></li>
+            <li><a href="#">Gift Cards</a></li>
+            <li><a href="#">Investor Relations</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Legal Notices</a></li>
+            <li><a href="#">Corporate Information</a></li>
+          </ul>
+        </div>
+
+        <div id="footerlistalt2" class="footerlistalt">
+          <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Media Center</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Cookie Preferences</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+
+
+
+      </div>
+
+      <div class="servicecode">
+        <button class="servicecodebutton">
+          Service Code
+        </button>
+      </div>
+
+      <div class="copyright">
+        <p>© 1997-2023 Netflix, Inc.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+</body>
+
 </html>
